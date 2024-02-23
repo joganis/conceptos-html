@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>mi primera web</title>
+</head>
+<body>
+
+    <!--listas  ,  ul es lista no ordenada, -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!--listas  ,  ol es lista  ordenada, -->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+
+        <li>
+            <ol style="list-style-type: lower-alpha">
+                <li > sub elemento 1</li>
+                <li> sub elemento 2</li>
+                <li> sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+    
+    <!--FORMULARIO - METODO get url maxima 255 caracteres post no es del todo seguro igual podemos ver los datos-->
+    <form action="/formulario" method="post">
+        <label for="nombre" >nombre</label>
+        <input value="vacio" type="text" id="nombre" name="nombreeee" placeholder ="Ingrese Nombre"/>
+        <!--para type podemos encontrar : submit, text, email, password(oculta el valor),radio, chekbox, file-->
+        <br>
+
+        <label for ="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese el apellido">
+        <br>
+        <!--se realizaran tablas-->
+        <label for="comentario" >Comentario </label> <br>
+        <textarea rows="10" cols="50" id="comentario" placeholder="Ingrese su comentario" name="comentario" ></textarea>
+        <!--podemos dejar aqui valor por defecto-->
+        <br> 
+        <button type="button"> tipo boton </button>
+        <button type="reset"> tipo reset </button>
+        <button type="submit">Enviar</button>
+
+        <!--el botton type tiene tres valores botton, reset, submit-->
+
+        <!--etiquetas de tipo submit no permite agregar etiquetas dentro de ellas-->
+    </form>
+
+    <h1> Mi primer heading</h1>
+    <h2>mi segundo heading</h2>
+    <h3>mi terecer heading </h3>
+    <h4>mi cuarto heading</h4>
+    <h5>mi quinto heading</h5>
+    <h6>mi sexto heading</h6>
+
+    <p>para dar inicio a este parrafo utilizamos esta etiqueta, mas podemos aun separar mas los parrafos</p>
+    <p> esta segunda es para agregar texto espaciado </p>
+    <hr>
+    <!-- en esta etiqueta realizamos una separcion de los parrafos-->
+    <h2>otro titulo para separar las historias </h2>
+    <!--con la etiqueta span podemos refernciar y la etiqueta <br> hacemos saltos de linea-->
+    <p>
+        cuando inicaimos podemos ir personalizando mas la pagina <span style ="color : blue">  en esta etiqueta span</span> 
+        se utilizara <br> para referenciar dentro de otras etiquetas
+    </p>
+    <a target ="_blank" href = "https://www.google.com" > Ir a google </a> <br>
+<img src ="imagenes\coffee.png" width="400" height ="400"/>
+</body>
+</html>
